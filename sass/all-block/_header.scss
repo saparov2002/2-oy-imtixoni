@@ -1,0 +1,225 @@
+nav{
+    padding: 35px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    background-color: $main-bg;
+}
+
+.menu{
+    
+    @include centerItem();
+    column-gap: 60px;
+    &__check{
+        display: none;
+    }
+    &__left{
+       display: flex;
+       align-items: center;
+       .ozgaruvchi{
+        display: none;
+        @include mobile() {
+            display: block;
+        }
+       }
+      
+            
+        }
+
+    &__right{
+        @include centerItem();
+        justify-content: space-between;
+        width: 100%;
+        @include mobile() {
+            flex-direction: column;
+            position: absolute;
+            top: 90px;
+            left: -620px;
+            background-color: green;
+            height: 80vh;
+            width: 70%;
+            z-index: 10;
+
+        }
+       
+        &-nav{
+            @include centerItem();
+            column-gap: 32px;
+            list-style: none;
+            @include mobile(){
+                margin-top: 60px;
+                flex-direction: column;
+                row-gap: 20px;
+                
+            }
+
+        }
+        
+
+        
+    }
+    &-link{
+        text-decoration: none;
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: $text-color; 
+    }
+    &-link:hover{
+        color: $btn-bg-color;
+    }
+    
+    
+}
+.main{
+    margin-top: 120px;
+    background-image: url(../../images/Bitmap.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    &-title{
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px; 
+        color: $main-bg; 
+        padding-top: 153px;
+        max-width: 500px;
+        @include tablet() {
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 56px;
+            text-align: center;
+            margin: 24px auto;
+            letter-spacing: -2.5px;
+        }
+        @include mobile() {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+            letter-spacing: -1.78571px;
+            max-width: 311px;
+        }
+    }
+    &-text{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px; 
+        color: $main-bg;
+        max-width: 405px;
+        margin: 40px 0 40px 70px; 
+        @include tablet() {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            margin: 0 auto 32px auto;
+            max-width: 573px;
+            
+        }
+        @include mobile() {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center; 
+            margin: 24px 0 34px 0;
+        }
+    }
+   
+}
+.freeze{
+    position: relative;
+}
+.point{
+   position: absolute;
+   top: 345px;
+   left: -160px;
+   @include tablet() {
+    display: none;
+   }
+} 
+.pointer{
+    position: absolute;
+    top: 345px;
+    left: 530px;
+    @include tablet() {
+        top: 450px;
+        left: -100px;
+    }
+    @include mobile() {
+        left: -300px;
+    }
+}
+.wrapper-main-btn{
+    @include tablet() {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.main-btn{
+    margin-bottom: 152px;
+   
+}
+.menu__check:checked~.menu__right{
+    left: 0px;
+}
+.set__first-btn{
+    display: none;
+    @include mobile() {
+        display: block;
+    }
+}
+
+            // about qismi
+
+
+ 
+ .circle-about{
+    margin-top: 100px;
+    background-image: url(../../images/for-about-main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+ }   
+ .header-title{
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;   
+    color: $main-bg; 
+    padding: 72px 0;
+    @include tablet() {
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: -1.78571px;  
+        color: $main-bg;
+        margin: 0 auto;
+         
+    }
+ }  
+
+.menu__remove {
+    display: none;
+}
+.menu__check:checked~.menu__remove {
+    display: block;
+}
+.menu__check:checked~.menu__add {
+    display: none;
+}
+.menu__add{
+    display: none;
+    @include mobile() {
+        display: block;
+    }
+}
+ 

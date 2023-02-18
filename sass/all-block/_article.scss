@@ -1,0 +1,233 @@
+
+
+.easy{
+    @include tablet(){
+        flex-direction: column;
+        align-items: center;
+    }
+    @include centerItem();
+    justify-content: space-between;
+    margin-top: 150px;
+   
+    &__left{
+        &-title{
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14286px;          
+            color: $title-color-2; 
+            @include tablet() {
+                font-family: $title-font;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 48px;
+                text-align: center;
+                margin: 56px auto 40px auto;
+                letter-spacing: -2.14286px;
+                color: $title-color-2; 
+                max-width: 457px;   
+            }
+            @include mobile() {
+                font-family: $title-font;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 32px;
+                text-align: center;
+                letter-spacing: -1.42857px; 
+                color: $title-color-2; 
+                max-width: 311px;
+            }
+        }
+        &-text{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: $text-color;
+            margin: 24px 0 40px 0;
+            max-width: 445px;
+            @include tablet() {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;               
+                text-align: center;            
+                color: $text-color; 
+                max-width: 573px;
+            }
+            @include mobile() {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+                text-align: center;      
+                color: $text-color; 
+                max-width: 311px;
+            }
+             
+        }
+    }
+    &__right{
+        &-img001{
+            display: none;
+            @include mobile() {
+                display: block;
+                transform: rotate(180deg);
+                position: absolute;
+                top: 120px;
+                left: -50px;
+            }
+        }
+    }
+}
+.one{
+    position: relative;
+    @include tablet() {
+        order: -1;
+    }
+}
+.easy__right-img{
+    @include tablet() {
+        max-width: 445px;
+    }
+    @include mobile() {
+        max-width: 311px;
+    }
+    
+
+    
+}
+.easy__right-img0{
+    position: absolute;
+    top: 297px;
+    left: -75px;
+    z-index: 12;
+    @include mobile{
+        display: none;
+       
+    }
+}
+.easy__right-img1{
+    position: absolute;
+    right: -225px;
+    @include mobile() {
+        display: none;
+    }
+}
+.two{
+    position: relative;
+    order: 1;
+    padding-left: 220px;
+    @include tablet() {
+        padding-left: 0;
+    }
+}
+.easy__left-img1{
+    position: absolute;
+    top: 40px;
+    left: -665px;
+    z-index: 13;
+    @include mobile() {
+        left: -65px;
+        top: -160px;
+    }
+}
+.easy__left-img{
+    position: absolute;
+    left: -670px;
+    @include mobile() {
+        display: none;
+    }
+}
+.for-month{
+    position: relative;
+}
+.easy__right-end0{
+    position: absolute;
+    z-index: 14;
+    top: 190px;
+    right: -250px;
+    transform: rotate(180deg);
+    
+    @include mobile() {
+        position: absolute;
+        left: -31px;
+        top: 132px;
+    }
+}
+.easy__right-end1{
+    position: absolute;
+    
+    right: -255px;
+    @include mobile() {
+        display: none;
+    }
+}
+.easy__right-end{
+    max-width: auto;
+    max-height: auto;
+    border-radius: 50%;
+    @include tablet() {
+        max-width: 445px;
+    }
+    @include mobile () {
+        max-width: 311px;
+    }
+    
+}
+.btn-wrap{
+    @include tablet() {
+        @include centerItem();
+        justify-content: center;
+    }
+    
+    
+
+}
+.three{
+    @include tablet() {
+        order: 1;
+    }
+}
+                                                  // about qismi
+  
+                                                  
+.faq{
+    &-title{
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;    
+        text-align: center;
+        letter-spacing: -2.14286px;   
+        color: $title-color-2;
+        margin-top: 120px;
+         
+    }
+}                                                  
+.faq1{
+    display: flex;
+    align-items: flex-start;
+    &-title{
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -1.78571px;   
+        color: $title-color-2; 
+    }
+    &__right{
+        &-select{
+            max-width: 730px;
+            border: none;
+            background-color: #e5eaf1;
+        }
+        &-option{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -1.07143px;   
+            color: $text-color;
+            max-width: 650px;
+              
+        }
+    }
+}                                                  

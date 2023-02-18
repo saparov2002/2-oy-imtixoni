@@ -1,0 +1,65 @@
+aside{
+    padding: 102px 0;
+    background-image: url(../../images/scoot.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include tablet() {
+        margin-top: 100px;
+    }
+    
+}
+.scoot{
+    @include centerItem();
+    justify-content: space-between;
+    @include tablet() {
+        flex-direction: column;
+    }
+    &__left{
+        &-title{
+            max-width: 415px;
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px; 
+            letter-spacing: -2.14286px;     
+            color: $main-bg;
+            @include tablet() {
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 48px;
+                text-align: center;
+                letter-spacing: -2.14286px; 
+                margin-bottom: 40px;
+                max-width: 457px;
+            } 
+            @include mobile() {
+                font-family: $title-font;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 48px;
+                text-align: center;
+                letter-spacing: -2.14286px; 
+                margin-bottom: 40px;
+                
+            }
+        }
+    }
+    &__right{
+        &-img1{
+            max-width: 159px;
+            margin-left: 18px;
+            @include tablet{
+                max-width: 114px;
+            }
+        }
+        &-img2{
+            max-width: 182px;
+            @include tablet{
+                max-width: 130px;
+            }
+        }
+    }
+}
+                                                // about qismi
+
