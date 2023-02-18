@@ -900,11 +900,38 @@ nav {
   letter-spacing: -2.14286px;
   color: #495567;
   margin-top: 120px;
+  margin-bottom: 64px;
+}
+@media screen and (max-width: 992px) {
+  .faq-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -2.14286px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .faq-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -1.42857px;
+  }
 }
 
 .faq1 {
+  margin-bottom: 100px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+  .faq1 {
+    flex-direction: column;
+    margin-top: 430px;
+  }
 }
 .faq1-title {
   font-family: "Space Mono";
@@ -913,19 +940,67 @@ nav {
   line-height: 48px;
   letter-spacing: -1.78571px;
   color: #495567;
+  max-width: 350px;
+  margin-top: -390px;
 }
-.faq1__right-select {
-  max-width: 730px;
-  border: none;
-  background-color: #e5eaf1;
+@media screen and (max-width: 992px) {
+  .faq1-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -1.78571px;
+    margin-bottom: 50px;
+  }
 }
-.faq1__right-option {
+.faq1__right {
+  max-width: 650px;
+}
+@media screen and (max-width: 992px) {
+  .faq1__right {
+    max-width: 600px;
+  }
+}
+.faq1__child1 {
+  padding: 32px 40px;
+  background-color: #e3e6ea;
+}
+.faq1__child1-title {
+  font-family: "Space Mono";
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: -1.07143px;
+  color: #495567;
+}
+.faq1__child1-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
   color: #939CAA;
-  max-width: 650px;
+  padding-top: 24px;
+}
+.text-img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq1__right-child2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e3e6ea;
+  margin-top: 16px;
+  padding: 32px 40px;
+}
+.faq1__right-child2 h5 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
 }
 
 aside {
