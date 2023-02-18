@@ -200,34 +200,97 @@
         letter-spacing: -2.14286px;   
         color: $title-color-2;
         margin-top: 120px;
+        margin-bottom: 64px;
+        @include tablet() {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            text-align: center;
+            letter-spacing: -2.14286px;
+             
+        }
+        @include mobile() {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+            letter-spacing: -1.42857px; 
+        }
          
     }
 }                                                  
 .faq1{
-    display: flex;
-    align-items: flex-start;
+    margin-bottom: 100px;
+    @include centerItem();
+    justify-content: space-between;
+    @include tablet() {
+        flex-direction: column;
+        margin-top: 430px;
+    }
     &-title{
         font-family: $title-font;
         font-weight: 700;
         font-size: 40px;
-        line-height: 48px;
+        line-height: 48px; 
         letter-spacing: -1.78571px;   
         color: $title-color-2; 
+        max-width: 350px; 
+        margin-top: -390px;
+        @include tablet() {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px; 
+            text-align: center;
+            letter-spacing: -1.78571px; 
+            margin-bottom: 50px;
+        }
     }
     &__right{
-        &-select{
-            max-width: 730px;
-            border: none;
-            background-color: #e5eaf1;
+        max-width: 650px;
+        @include tablet() {
+            max-width: 600px;
         }
-        &-option{
+    }
+    &__child1{
+        padding: 32px 40px;
+        background-color: #e3e6ea;
+        &-title{
+            font-family: $title-font;
             font-weight: 700;
             font-size: 24px;
             line-height: 28px;
-            letter-spacing: -1.07143px;   
+            letter-spacing: -1.07143px;
+            color: $title-color-2; 
+        }
+        &-text{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
             color: $text-color;
-            max-width: 650px;
-              
+            padding-top: 24px; 
+        }
+        &-img{
+
         }
     }
-}                                                  
+}   
+.text-img-wrap{
+    @include centerItem();
+    justify-content: space-between;
+}                                               
+.faq1__right-child2{
+    display: flex;
+    justify-content: space-between;
+    background-color:  #e3e6ea;
+    margin-top: 16px;
+    padding: 32px 40px;
+    h5{
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px; 
+        letter-spacing: -1.07143px;  
+        color: $title-color-2;        
+    }
+}
