@@ -9,9 +9,30 @@
 }
 body{
     font-family: $text-font;
+    overflow-x: hidden;
+    background-color: $main-bg;
 }
 .container{
     max-width: 1106px;
     margin: 0 auto;
     padding: 0 15px;
+}
+@import './all-block/all-blocks';
+.btn{
+    border: none;
+    background-color: $btn-bg-color;
+    padding: 14px 39px;
+    color: $main-bg;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center; 
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: transparent;
+    border: 1px solid $btn-bg-color;
+    color: $btn-bg-color;
+
 }

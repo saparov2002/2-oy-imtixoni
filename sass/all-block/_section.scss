@@ -1,0 +1,335 @@
+.boxs{
+    margin-top: 160px;
+    display: grid;
+    grid-template-areas: 'item1 item2 item3';
+    column-gap: 30px;
+    @include tablet() {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        
+    }
+}
+.box{
+    max-width: 350px;
+   @include tablet() {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+   }
+   @include mobile() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   img{
+    width: 96px;
+    @include mobile() {
+        width: 56px;
+        margin-left: 125px;
+    }
+   }
+   
+}
+.box-1{
+    grid-area: item1;
+    @include tablet() {
+        display: flex;
+        column-gap: 79px;
+        
+    }
+    @include mobile() {
+        display: block;
+    }
+    
+}
+.box-2{
+    grid-area: item2;
+    @include tablet() {
+        display: flex;
+        column-gap: 79px;
+    }
+    @include mobile() {
+        display: block;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
+.box-3{
+    grid-area: item3;
+    @include tablet() {
+        display: flex;
+        column-gap: 79px;
+    }
+    @include mobile() {
+        display: block;
+    }
+}
+.box-3::after{
+    content: '';
+    position: relative;
+    width: 15px;
+    height: 642px;
+    background-color: #E5ECF4;
+    display: none;
+    @include tablet() {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: -160px;
+        transform: translateX(42px);
+    }
+    @include mobile() {
+        display: none;
+    }
+}
+.description{
+    max-width: 350px;
+   
+    &-title{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: $title-color-2;
+        margin-top: 40px;
+        margin-bottom: 27px; 
+        @include mobile() {
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;   
+            text-align: center;
+            letter-spacing: -0.892857px;
+            color: $title-color-2;
+        }
+       
+    }
+    &-text{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px; 
+        color: $text-color; 
+        @include tablet() {
+            max-width: 398px;
+            margin-top: -20px;
+       }
+       
+        @include tablet() {
+            max-width: 311px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;   
+            text-align: center;
+            
+            color: $text-color; 
+            
+        }
+    }
+}
+.for-line{
+    position: relative;
+   
+}
+.line{
+    position: absolute;
+    top: 39px;
+    left: -220px;
+    z-index: -1;
+    @include tablet() {
+       display: none;
+    }
+    @include mobile() {
+        display: none;
+    }
+    
+ }
+ 
+                                                 // about qismi 
+.digital{
+    margin-top: 150px;
+    @include centerItem();
+    justify-content: space-between;
+    @include tablet() {
+        flex-direction: column;
+        row-gap: 120px;
+    }
+    &__right{
+        position: relative;
+        &-img1{
+            max-width: auto;
+            max-height: auto;
+            border-radius: 50%;
+            @include tablet() {
+                max-width: 445px;
+            }
+            @include mobile() {
+                max-width: 311px;
+            }
+        }
+        &-img2{
+            position: absolute;
+            left: 570px;
+            @include mobile() {
+                display: none;
+            }
+
+        }
+        &-img3{
+            position: absolute;
+            top: 258px;
+            left: -86px;
+            @include mobile() {
+                position: absolute;
+                top: 100px;
+                left: -20px;
+            }
+        }
+    }
+    &__left{
+        &-title{
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14286px;
+            color: $title-color-2; 
+            margin-top: -55px;
+            max-width: 445px;
+            @include tablet() {
+                font-family: $title-font;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 48px;
+                text-align: center;
+                letter-spacing: -2.14286px; 
+                margin: 0 auto;
+            }
+        }
+        &-text{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;   
+            color: $text-color;
+            max-width: 445px; 
+            margin-top: 24px;
+            @include tablet() {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;          
+                text-align: center;
+                color: $text-color;
+                max-width: 573px;
+                margin: 40px auto;
+                 
+            }
+        }
+    }
+ }  
+ .next{
+    @include tablet() {
+        order: 1;
+    }
+ }
+ .next1{
+    order: 1;
+ } 
+ .next2{
+    position: absolute;
+    left: -215px;
+ }
+ .next3{
+    position: absolute;
+    left: -250px;
+    top: 0px;
+    @include mobile() {
+        left: -40px;
+        top: 80px;
+    }
+ }
+ .value{
+    &-title{
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+        letter-spacing: -2.14286px;        
+        color: $title-color-2;
+        margin-top: 50px;
+        @include mobile() {
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            text-align: center;
+            letter-spacing: -2.14286px;       
+            color: $text-color; 
+        }
+        @include mobile() {
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+            letter-spacing: -1.42857px;        
+            color: $title-color-2; 
+            margin: 0 auto;
+        }
+         
+    }
+ }
+ .our1{
+    max-width: 350px;
+    &-img{
+    @include tablet() {
+    max-width: 350px;
+    }
+    
+    }
+    &-title{
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;    
+        text-align: center;
+        letter-spacing: -1.07143px;
+        color: $title-color-2;
+        margin: 32px 0 27px 0;
+        @include tablet() {
+            font-family: $title-font;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px; 
+            text-align: center;
+            letter-spacing: -1.07143px;   
+            color: $title-color-2; 
+        }
+    }
+    &-text{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;    
+        color: $text-color;
+        max-width: 350px;
+        @include tablet() {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;   
+            color: $text-color; 
+            max-width: 457px;
+        }
+    }
+ }
+ .our-wrap{
+    margin-top: 63px;
+        @include centerItem();
+        justify-content: space-between;
+        @include tablet() {
+            flex-direction: column;
+            justify-content: center;
+        }
+ }
