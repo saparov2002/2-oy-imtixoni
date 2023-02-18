@@ -333,3 +333,11 @@
             justify-content: center;
         }
  }
+                                               //  careers qismi
+                                           
+                                               
+.careers-btn{
+    @include tablet() {
+        margin-bottom: 50px;
+    }
+}                                               

@@ -670,6 +670,12 @@ nav {
   }
 }
 
+@media screen and (max-width: 992px) {
+  .careers-btn {
+    margin-bottom: 50px;
+  }
+}
+
 .easy {
   display: flex;
   align-items: center;
@@ -1001,6 +1007,72 @@ nav {
   line-height: 28px;
   letter-spacing: -1.07143px;
   color: #495567;
+}
+
+.general {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 64px 37px 40px;
+  background-color: #e3e6ea;
+  margin-bottom: 24px;
+  max-width: 1110px;
+}
+@media screen and (max-width: 640px) {
+  .general {
+    flex-direction: column;
+    max-width: 311px;
+  }
+}
+
+.general-top {
+  margin-top: 120px;
+}
+@media screen and (max-width: 640px) {
+  .general-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.generaldescription-title {
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 640px) {
+  .generaldescription-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.803571px;
+  }
+}
+.generaldescription-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+@media screen and (max-width: 640px) {
+  .generaldescription-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    margin: 4px 0 16px 0;
+  }
+}
+
+.general-btn {
+  padding: 20px 100px;
 }
 
 aside {
